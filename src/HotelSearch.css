@@ -1,0 +1,88 @@
+body {
+    background-color: #Fffff0; /* Eggshell color */
+    font-family: 'Century Schoolbook', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.search-container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: #EDE8BA; /* Eggshell */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    /* max-width: 900px; */
+    margin-top: 80px;
+    margin-left: 40px;
+    font-family: 'Century Schoolbook', serif;
+}
+
+.search-input {
+    padding: 12px;
+    border: 1px solid #352208; /* Bistre */
+    border-radius: 5px;
+    font-size: 16px;
+    min-width: 220px; /* Increased width */
+    flex-grow: 1;
+    background: #FFF8E1; /* Light eggshell background */
+    color: #352208; /* Bistre text color */
+    font-family: 'Century Schoolbook', serif;
+}
+
+.search-input::placeholder {
+    color: #7B6B43; /* Ecru */
+    opacity: 0.8;
+}
+
+.search-button {
+    background: transparent;
+    color: #7B6B43; /* Ecru */
+    padding: 14px 25px; /* Increased padding for a larger button */
+    border: 2px solid #7B6B43; /* Ecru */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Match input font size */
+    height: 48px; /* Ensures alignment with input boxes */
+    font-family: 'Century Schoolbook', serif;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .search-button:hover {
+    background: #7B6B43; /* Ecru */
+    color: white;
+  }
+
+.hotel-list-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background: #F0EAD6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+}

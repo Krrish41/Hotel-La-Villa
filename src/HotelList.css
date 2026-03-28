@@ -1,0 +1,175 @@
+.hotel-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hotel-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 75vw; /* Takes up 75% of the screen */
+    margin: auto; /* Centers it with 12.5% space on each side */
+    display: flex;
+    overflow: hidden;
+    padding: 3%; /* Pushes content 3% away from the border */
+    align-items: center;
+    flex-direction: row; /* Ensures horizontal layout between image and text */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+}
+
+.hotel-card:hover {
+    transform: scale(1.05); /* Scales the card up by 5% on hover */
+}
+
+.hotel-card img {
+    width: 40%; /* Adjusted width for the image */
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px; /* Increased border-radius for more curves */
+    border: 4px solid #352208; /* Bistre border around the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding shadow to the image */
+}
+
+.hotel-info {
+    padding: 3%; /* Moves text away from the edges */
+    width: 60%; /* Adjusts the width for room details */
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: flex-start;
+    text-align: left;
+    font-family: 'Century Schoolbook', serif;
+}
+
+.hotel-info h3 {
+    font-size: 20px; /* Slightly larger for title */
+    margin-bottom: 5px;
+    color: #352208; /* Bistre */
+}
+
+.hotel-info p {
+    font-size: 16px;
+    color: #685634; /* Coyote */
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 18px; /* Larger price text */
+    font-weight: bold;
+    margin-top: 5px;
+    color: #806443; /* Field Drab */
+}
+
+.rating {
+    font-size: 14px;
+    color: #352208; /* Bistre */
+    margin-top: 5px;
+}
+
+.book-button {
+    background: transparent;
+    color: #7B6B43; /* Ecru */
+    padding: 10px 20px;
+    border: 2px solid #7B6B43; /* Ecru */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Century Schoolbook', serif;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none; /* <-- ADD THIS LINE */
+    /* align-self: center; */
+    display: block; 
+    text-align: center;
+}
+/* 
+.book-button1 {
+    background: transparent;
+    color: inherit; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Century Schoolbook', serif;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+} */
+
+.book-button:hover {
+    background: #7B6B43; /* Ecru */
+    color: white;
+}
+
+.other-rooms {
+    margin-top: 40px;
+    width: 75vw; /* Takes up 75% of the screen */
+    margin: auto;
+    background: #F0EAD6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.other-rooms h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #352208; /* Bistre */
+}
+
+.other-rooms-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recommended-room {
+    position: relative;
+}
+
+.recommended-room-text {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #352208; /* Bistre */
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent background */
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: auto;
+}
+
+.recommended-room img {
+    margin-top: 50px; /* Added margin to move the image lower */
+}
+
+@media screen and (max-width: 768px) {
+    .hotel-card {
+        flex-direction: column;
+        width: 90vw;
+        padding: 5%;
+    }
+
+    .hotel-card img {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .hotel-info {
+        width: 100%;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .other-rooms {
+        width: 90vw;
+    }
+
+    .other-rooms-list {
+        flex-direction: column;
+    }
+}

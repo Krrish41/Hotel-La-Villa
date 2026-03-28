@@ -1,0 +1,242 @@
+/* User Details Styling */
+.main-bod {
+  margin-top: 60px;
+  display: flex;
+  font-family: 'Century Schoolbook', serif;
+  background: #F0EAD6;
+  height: auto;
+  min-height: 100vh;
+}
+
+.sidebar {
+  /* margin-top: 60px; */
+  width: 250px;
+  background: #352208;
+  padding: 20px;
+  /* --- CHANGED --- */
+  height: calc(100vh - 60px); /* Was 100vh. Set height relative to viewport minus navbar */
+  /* --- END CHANGED --- */
+  display: flex;
+  flex-direction: column;
+  color: #E1BB80;
+  position: sticky;
+  /* --- CHANGED --- */
+  top: 60px; /* Was 0. Stick 60px from the top (below navbar) */
+  /* --- END CHANGED --- */
+  z-index: 100;
+  overflow-y: auto; /* Add scroll if menu gets long */
+  flex-shrink: 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  border: none;
+  padding: 0;
+  position: relative;
+  z-index: 101;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  background: #806443;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #E1BB80;
+  margin-bottom: 10px;
+  gap: 10px;
+  background: #685634;
+  border-radius: 8px;
+}
+
+.menu-item:hover {
+  background: #7B6B43;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #c44444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Century Schoolbook', serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.logout-button:hover {
+  background: #a83232;
+}
+
+.user-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 0;
+  width: 100%;
+}
+
+.user-container h1 {
+  color: #352208;
+  margin-top: 0;
+}
+
+.search-bar {
+  width: 100%;
+  background: #EAD9B0;
+  border: 1px solid #C8B58A;
+  border-radius: 10px;
+  padding: 24px;
+  margin: 12px 0 20px;
+}
+
+.search-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+
+.search-row:last-child {
+  margin-bottom: 0;
+}
+
+.search-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-field label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #352208;
+  font-size: 14px;
+}
+
+.search-field input, .search-field select {
+  padding: 22px;
+  border-radius: 6px;
+  border: 1px solid #C0B282;
+  background: #FFF8E1;
+  font-size: 18px;
+  color: #352208;
+  min-height: 36px;
+}
+
+.export-csv-btn {
+  padding: 8px 16px;
+  background: #685634;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Century Schoolbook', serif;
+  transition: background 0.3s;
+  white-space: nowrap;
+  height: auto;
+  width: auto;
+  min-width: auto;
+}
+
+.export-csv-btn:hover {
+  background: #7B6B43;
+}
+
+.search-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.search-bar button, .search-buttons button {
+  padding: 14px 24px;
+  background: #685634;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.reset-btn {
+  background: #a85f32;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.bookings-table th, .bookings-table td {
+  border: 1px solid #d7c9a4;
+  padding: 12px;
+  text-align: left;
+  color: #352208;
+}
+
+.bookings-table thead th {
+  background: #f6edd1;
+  color: #352208;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.bookings-table tbody td {
+  color: #1a1a1a;
+}
+
+.bookings-table input, .bookings-table select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #C0B282;
+  border-radius: 6px;
+  background: #FFF8E1;
+  color: #352208;
+  font-size: 16px;
+}
+
+.bookings-table td button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}

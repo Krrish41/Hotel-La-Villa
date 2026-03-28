@@ -1,0 +1,106 @@
+.footer-container {
+    background-color: #352208; 
+    color: #f0ead6; 
+    padding: 50px 100px;
+    font-family: 'Century Schoolbook', serif;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #806443; 
+    padding-bottom: 30px;
+}
+
+
+.footer-subscribe {
+    flex: 1;
+    max-width: 400px;
+}
+
+.footer-heading {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #e1bb80; 
+}
+
+.subscribe-box {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-box input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: #685634; 
+    color: #f0ead6; 
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.subscribe-box button {
+    padding: 12px 20px;
+    border: none;
+    background: #7b6b43;
+    color: #f0ead6;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.subscribe-box input::placeholder {
+    color: #e1bb80; 
+}
+
+.footer-contact {
+    flex: 1;
+    max-width: 300px;
+    font-size: 20px;
+}
+
+.footer-contact p a {
+    text-decoration: none;
+    color: #f0ead6;
+    font-size: 18px;
+}
+
+.footer-contact p a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-links {
+    flex: 1;
+    max-width: 300px;
+    font-size: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #f0ead6;
+    font-size: 18px;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 16px;
+    color: #c2b49a;
+}

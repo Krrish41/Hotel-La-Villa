@@ -1,0 +1,90 @@
+.feedback-form {
+    background-color: rgba(255, 255, 240, 0.9); /* Light Ivory with transparency */
+    color: #352208; /* Bistre */
+    font-family: 'Century Schoolbook', serif;
+    padding: 50px;
+    border-radius: 8px;
+    max-width:900px;
+    margin: 100px auto 40px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    position: static;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #352208; /* Bistre */
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-size: 24px;
+    color: #352208; /* Bistre */
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #352208; /* Bistre */
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #7b6b43; /* Coyote */
+    border-radius: 4px;
+    background: #f0ead6; /* Eggshell */
+    color: #352208; /* Bistre */
+  }
+  
+  .stars {
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+  
+  .star {
+    font-size: 28px;
+    color: #e1bb80; /* Ecru */
+    margin-right: 5px;
+  }
+  
+  .star.filled {
+    color: #806443; /* Coyote */
+  }
+  
+  button {
+    background-color: #685634; 
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #7b6b43; /* Coyote */
+  }
+ 
+  .container1 {
+    background-image: url("./hero.jpg") ;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 60px;
+  }
+  

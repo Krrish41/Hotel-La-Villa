@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: 'Century Schoolbook', serif;
+    font-weight: bold;
+    background-color: #FFFFF0; /* Off-white background */
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 800px; /* Space items evenly */
+    align-items: center;
+    background-color: #352208; /* Dark brown */
+    padding: 10px 40px; /* Padding for navbar */
+    color: #E1BB80; /* Light beige */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Fixed position for sticky effect */
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure navbar is above other content */
+  }
+  
+  .navbar.scrolled {
+    background-color: #E1BB80; /* Light beige */
+    color: #352208; /* Dark brown */
+  }
+  
+  .logo {
+    font-size: 28px; /* Logo size */
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Ensure logo link is always visible */
+  .navbar .logo a { color: #E1BB80 !important; text-decoration: none; }
+  .navbar.scrolled .logo a { color: #352208 !important; }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    position: relative;
+    margin: 0 20px; /* Margin for spacing */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 18px; /* Font size */
+    padding: 10px 15px; /* Padding for better button appearance */
+    border: none; /* Remove border */
+    background: none; /* Remove background */
+    color: inherit; /* Inherit color from parent */
+      text-decoration: none; /* Remove underline */
+    }
+
+  
+  .nav-item:hover {
+    color: #FFFFF0; /* Light beige on hover */
+  }
+  .nav-item1 {
+    position: relative;
+    margin: 0 20px; /* Margin for spacing */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 18px; /* Font size */
+    padding: 10px 15px; /* Padding for better button appearance */
+    border: none; /* Remove border */
+    background: none; /* Remove background */
+    color: inherit; /* Inherit color from parent */
+      text-decoration: none; /* Remove underline */
+    }
+
+  
+  .nav-item1:hover {
+    color: #FFFFF0; /* Light beige on hover */
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%; /* Position below the nav item */
+    left: 0;
+    background-color: #FFFFF0; /* Off-white for dropdown */
+    color: #352208; /* Dark brown text */
+    list-style: none;
+    padding: 0; /* No padding for dropdown */
+    margin: 0;
+    border-radius: 4px; /* Slightly rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+    width: 160px; /* Set a fixed width for dropdown items */
+  }
+  
+  .dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .dropdown-item {
+    padding: 12px 15px; /* Increased padding for better dropdown item appearance */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    text-align: left; /* Align text to the left */
+    color: inherit; /* Inherit color from parent */
+      text-decoration: none; /* Remove underline */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #E1BB80; /* Light beige background on hover */
+    color: #352208; /* Dark brown text on hover */
+  }
+  
+  .content {
+    padding-top: 60px; /* Space for fixed navbar */
+    text-align: center; /* Centering content */
+  }
+  
+  h1 {
+    margin: 20px 0; /* Margin for heading */
+  }
+  
+  p {
+    margin: 10px 0; /* Margin for paragraph */
+  }
+  
+  /* Additional styles for dropdown arrow */
+  .nav-item1::after {
+    content: '▼'; /* Dropdown arrow */
+    font-size: 12px; /* Size of the arrow */
+    margin-left: 5px; /* Space between text and arrow */
+    transition: transform 0.3s ease; /* Smooth transition for arrow */
+  }
+  
+  .nav-item1:hover::after {
+    transform: translateY(2px); /* Slightly move the arrow down on hover */
+  }
+
+  .nav-item::after {
+    content: ''; /* Dropdown arrow */
+    font-size: 12px; /* Size of the arrow */
+    margin-left: 5px; /* Space between text and arrow */
+    transition: transform 0.3s ease; /* Smooth transition for arrow */
+  }
+  
+  .nav-item:hover::after {
+    transform: translateY(2px); /* Slightly move the arrow down on hover */
+  }

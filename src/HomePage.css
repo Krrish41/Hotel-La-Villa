@@ -1,0 +1,139 @@
+/* src/Home.css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Century Schoolbook', serif;
+}
+
+
+
+.container {
+    margin-top: -3.7%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Added for positioning the video */
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 95px;
+    color: #fffff0;
+    margin-bottom: 50px;
+    font-family: 'Century Schoolbook', serif;
+}
+
+.content .bookNowButton {
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #E1BB80;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.content .bookNowButton:hover {
+    background-color: #E1BB80;
+    color: #000;
+}
+
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .background-clip {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.view {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.block {
+    height: 200px;
+    width: 300px;
+    margin: 50px;
+    border: 0.5mm solid black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.block:nth-child(1) {
+    background: rgb(232, 88, 67);
+}
+
+.block:nth-child(2) {
+    background: rgb(26, 84, 207);
+}
+
+.block:nth-child(3) {
+    background: rgb(36, 217, 127);
+}
+
+.block:nth-child(4) {
+    background: rgb(157, 86, 247);
+    width: 700px;
+}
+
+.block:nth-child(5) {
+    background: rgb(250, 201, 82);
+}
+
+.block:nth-child(6) {
+    background: rgb(26, 84, 207);
+}
+
+.block:nth-child(7) {
+    background: rgb(157, 86, 247);
+}
+
+.block:nth-child(8) {
+    background: rgb(36, 217, 127);
+    width: 700px;
+}
+
+.block:nth-child(9) {
+    background: rgb(232, 88, 67);
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+    }
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}

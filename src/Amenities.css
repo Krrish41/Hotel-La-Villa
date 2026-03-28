@@ -1,0 +1,114 @@
+.amenities-container {
+  text-align: center;
+  background-color: #f0ead6;
+  color: #352208;
+  padding: 80px 10%;
+}
+
+.amenities-title {
+  font-size: 60px;
+  font-family: 'Century Schoolbook', serif;
+  margin-bottom: 20px;
+}
+
+.amenities-description {
+  font-size: 30px;
+  font-family: 'Century Schoolbook', serif;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #7b6b43;
+}
+
+.amenities-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0px;
+  gap: 0px;
+}
+
+.amenities-text {
+  flex: 1;
+  padding: 50px;
+  text-align: left;
+  font-size: 30px;
+}
+
+.amenities-heading {
+  font-size: 50px;
+  font-family: 'Century Schoolbook', serif;
+  color: #352208;
+  margin-bottom: 15px;
+}
+
+.amenities-content {
+  font-size: 25px;
+  color: #685634;
+  max-width: 650px;
+}
+
+.amenities-image-container {
+  flex: 1;
+  text-align: right;
+}
+
+.amenities-image {
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.amenities-highlight {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  background-color: #806443;
+  padding: 60px 0;
+  margin-bottom: 50px;
+}
+
+.amenities-highlight-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.amenities-highlight-title {
+  font-size: 48px;
+  font-family: 'Century Schoolbook', serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.highlight-divider {
+  width: 120px;
+  height: 3px;
+  background-color: #fff;
+  border: none;
+  margin: 10px auto;
+}
+
+.amenities-highlight-text {
+  font-size: 28px;
+  font-family: 'Century Schoolbook', serif;
+  color: #f0ead6;
+  line-height: 1.8;
+  padding: 0 15%;
+}
+
+.amenities-highlight-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.highlight-fullwidth-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

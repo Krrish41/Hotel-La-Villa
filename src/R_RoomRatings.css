@@ -1,0 +1,142 @@
+/* body {
+    font-family: 'Century Schoolbook', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #F0EAD6;
+} */
+
+.rating-container {
+    display: flex;
+    width: 100%;
+    font-family: 'Century Schoolbook', serif;
+    margin-top: 60px;
+    padding: 0;
+    display: flex;
+    background: #F0EAD6;
+}
+
+.sidebar {
+    width: 250px;
+    background: #352208;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #E1BB80;
+    flex-shrink: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    background: #806443;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #E1BB80;
+    margin-bottom: 10px;
+    gap: 10px;
+    background: #685634;
+    border-radius: 8px;
+}
+
+.menu-item:hover {
+    background: #7B6B43;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: 10px;
+  background: #c44444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Century Schoolbook', serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.logout-button:hover {
+  background: #a83232;
+}
+
+.contact {
+    margin-top: auto;
+    font-size: 14px;
+    background: #685634;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+    background: #FFF8E1;
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rating-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars {
+    font-size: 24px;
+    color: #FFD700;
+}

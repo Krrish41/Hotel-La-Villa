@@ -1,0 +1,203 @@
+/* AdminLogin.css */
+.admin-container {
+  margin: 0;
+  padding: 0;
+  font-family: "Century Schoolbook", serif;
+  background: url("./ad.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  display: flex;
+  width: 800px;
+  /* height: 400px;  <-- remove this */
+  min-height: 400px;       /* keep your baseline height */
+  background-color: #fffff0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: visible;       /* make sure nothing gets clipped */
+}
+
+
+/* Left Section (Logo) */
+.left-section {
+  width: 40%;
+  background-color: #e1bb80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-section img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Right Section (Login Form) */
+.right-section {
+  width: 60%;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* keeps error + form centered */
+}
+.right-section form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.right-section h1 {
+  font-size: 28px;
+  color: #352208;
+  margin-bottom: 10px;
+}
+
+.right-section p {
+  font-size: 18px;
+  color: #685634;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #806443;
+  border-radius: 5px;
+  background-color: #f0ead6;
+  color: #352208;
+}
+
+.input-group input::placeholder {
+  color: #806443;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: white;
+  background-color: #685634;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #7b6b43;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Terms and Conditions */
+.terms {
+  font-size: 14px;
+  color: #685634;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+.linklike {
+  background: none;
+  border: none;
+  color: #685634;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+.linklike:hover {
+  color: #352208;
+  background: none;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 80px;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fffff0;
+  color: #352208;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Error Alert Box */
+.error-box {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Warning icon animation */
+.error-icon {
+  font-size: 18px;
+}
+
+/* Smooth fade-in for alerts */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
