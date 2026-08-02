@@ -2,6 +2,8 @@
 
 A full-stack hotel booking and management system built with React, Node.js, Express, and MySQL.
 
+🌐 **Live Demo:** [https://krrish41.github.io/Hotel-La-Villa](https://krrish41.github.io/Hotel-La-Villa)
+
 This project combines a customer-facing hotel website with an admin dashboard. Guests can browse rooms, search by stay dates, add amenities, place bookings, and submit feedback. Managers can log in to a protected dashboard to monitor bookings, room availability, amenity revenue, and guest feedback.
 
 ## Project Overview
